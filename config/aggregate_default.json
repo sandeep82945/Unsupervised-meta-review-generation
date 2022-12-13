@@ -1,0 +1,18 @@
+{ 
+  "p_name": "default", // source directory
+  "files": ["test.csv"], // input files
+  "gold": "golden_new.json", // gold standard summary
+  "embedding": "glove-wiki-gigaword-300", // embedding
+  "threshold": 0.8, // similarity threshold
+  "num_review": 8, // number of reviews to summarize  #remove
+  "is_exact": "False", // whether it is ok to have fewer number of reviews  #remove
+  "top_k": 20, // top-k extractions to summarize             #remove
+  "sentiment": "all", // selection rule for sentiment, "pos"/"neg"/"all", "" means select everything
+  "attribute": "all", // selection rule for attribute, <attr_name>/"all", "" means select everything
+
+  "threshold_min_clusters": 3, //3: minimum number of clusters to be taken
+  "threshold_deduplication": 0.9, //0.7: remove duplicate clusters with similarity above threshold
+  "threshold_word_similarity": 0.35, //0.3: only considers clusters with word to aspect-centroid similarity greater than threshold 
+  "threshold_sentiment": 0.35, //0.3: only considers clusters with word sentiments greater than threshold
+  "threshold_cluster_similarity": 0.5 //0.5: only considers clusters with cluster-centroid to aspect-centroid similarity greater than threshold
+}
