@@ -32,7 +32,7 @@ python src/prepare_new.py \
 ### Step 2. Training
 ```
 pip install -r requirements.txt
-cd meta_review
+
 python src/train_new.py \
   config/prepare_default.json \
   config/train_default.json
