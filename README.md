@@ -16,9 +16,14 @@ The workflow has following 4 steps.
 
 You can skip Steps 1-3 by downloading our pre-trained model and dataset.
 
-Step 1. Data preparation
+### Step 1. Data preparation
 
-### Step 2. Meta Review Generation
+```
+python src/prepare_new.py \
+  config/prepare_default.json
+```
+
+### Step 2. Training
 ```
 $ pip install -r requirements.txt
 $ cd meta_review
