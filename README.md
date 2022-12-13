@@ -19,11 +19,10 @@ You can skip Steps 1-3 by downloading our pre-trained model and dataset.
 Step 1. Data preparation
 
 ### Step 2. Meta Review Generation
-
+```
 $ pip install -r requirements.txt
 $ cd meta_review
 $ python src/train_new.py \
   config/prepare_default.json \
   config/train_default.json
-
-
+```
