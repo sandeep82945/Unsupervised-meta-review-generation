@@ -22,5 +22,8 @@ Step 1. Data preparation
 
 $ pip install -r requirements.txt
 $ cd meta_review
-$ 
+$ python src/train_new.py \
+  config/prepare_default.json \
+  config/train_default.json
+
 
