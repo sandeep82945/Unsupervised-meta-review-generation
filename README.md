@@ -1,1 +1,52 @@
 # Unsupervised-meta-review-generation
+
+## Preprocessing
+
+To run our framework, you need to preprocess your dataset and extract opinion phrases from the input sentences.
+
+
+## Running
+
+The workflow has following 4 steps.
+
+- Step 1. Data preparation
+- Step 2. Training
+- Step 3. Aggregation
+- Step 4. Generation
+
+You can skip Steps 1-3 by downloading our pre-trained model and dataset.
+
+### Step 1. Data preparation
+
+#### Opinion Extraction
+```
+python src/aspect_extraction/aspect_extraction/aspect_generator.py
+```
+#### Data preparation for generation
+
+```
+python src/prepare_new.py \
+  config/prepare_default.json
+```
+
+### Step 2. Training
+```
+pip install -r requirements.txt
+
+python src/train_new.py \
+  config/prepare_default.json \
+  config/train_default.json
+```
+
+### Step 3. Aggregation
+```
+python src/aggregate_final.py \
+  config/aggregate_default.json \
+```
+
+### Step 4. Generation
+
+```
+python src/evaluate_final.py \
+  config/aggregate_default.json \
+```
