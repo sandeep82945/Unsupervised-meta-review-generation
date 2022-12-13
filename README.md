@@ -33,10 +33,14 @@ $ python src/train_new.py \
 ```
 
 ### Step 3. Aggregation
+```
 python src/aggregate_final.py \
   config/aggregate_default.json \
+```
 
 ### Step 4. Generation
 
+```
 python src/evaluate_final.py \
   config/aggregate_default.json \
+```
