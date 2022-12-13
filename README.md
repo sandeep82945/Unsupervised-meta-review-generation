@@ -21,7 +21,7 @@ You can skip Steps 1-3 by downloading our pre-trained model and dataset.
 #### Opinion Extraction
 python src/aspect_extraction/aspect_extraction/aspect_generator.py
 
-### Data preparation for generation
+#### Data preparation for generation
 
 ```
 python src/prepare_new.py \
